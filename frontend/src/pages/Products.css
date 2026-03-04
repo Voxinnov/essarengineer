@@ -1,0 +1,221 @@
+.modern-products-page {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+.products-hero {
+    padding: 15rem 0 8rem;
+    text-align: center;
+}
+
+.modern-title {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.center-p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Control Bar */
+.products-controls {
+    position: sticky;
+    top: 6.5rem;
+    z-index: 100;
+    padding: 1.5rem 0;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.search-modern {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem 2rem;
+    border-radius: 99px;
+    background: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.search-modern input {
+    background: none;
+    border: none;
+    color: var(--foreground);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.search-modern input:focus {
+    outline: none;
+}
+
+.filter-modern {
+    display: flex;
+    align-items: center;
+}
+
+.filter-scroll {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-btn-modern {
+    padding: 0.75rem 1.5rem;
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: rgba(15, 23, 42, 0.6);
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn-modern:hover {
+    color: var(--foreground);
+}
+
+.filter-btn-modern.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Product Grid */
+.modern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.modern-product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-radius: 2.5rem !important;
+}
+
+.product-visual {
+    width: 100%;
+    height: 350px;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    background: #f8fafc;
+}
+
+.product-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.modern-product-card:hover .product-visual img {
+    transform: scale(1.1);
+}
+
+.brand-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    background: white !important;
+    color: var(--primary) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.category-meta {
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.product-details h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.product-details p {
+    font-size: 1rem;
+    color: rgba(15, 23, 42, 0.6);
+    line-height: 1.6;
+}
+
+.product-specs-mini {
+    display: flex;
+    gap: 1rem;
+}
+
+.spec-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: rgba(15, 23, 42, 0.4);
+    background: rgba(15, 23, 42, 0.03) !important;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* Empty State */
+.empty-state {
+    padding: 8rem;
+    text-align: center;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .modern-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flex-between {
+        flex-direction: column;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .modern-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-title {
+        font-size: 3rem;
+    }
+}

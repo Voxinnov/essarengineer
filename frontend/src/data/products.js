@@ -1,0 +1,110 @@
+export const products = [
+    {
+        id: 1,
+        slug: 'compression-garments',
+        title: 'Compression Garments',
+        category: 'Own Product',
+        shortDesc: 'Custom-fit pressure garments for burn and post-surgical care.',
+        image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=2070',
+        features: ['Burn garments', 'Pressure garments', 'Post-surgical garments'],
+        applications: ['Burn recovery', 'Lymphoedema management', 'Post-operative healing'],
+        specifications: 'Medical grade Lycra and Nylon blend, available in various pressure levels.',
+        brand: 'Essar Engineers'
+    },
+    {
+        id: 2,
+        slug: 'human-dermal-matrix',
+        title: 'Human Dermal Matrix (Dermacell)',
+        category: 'Regenerative Medicine',
+        shortDesc: 'Advanced skin regeneration solution for chronic and complex wounds.',
+        image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=2070',
+        features: ['Acellular dermal matrix', 'High preservation', 'Rapid vascularization'],
+        applications: ['Diabetic foot ulcers', 'Venous leg ulcers', 'Traumatic wounds'],
+        specifications: 'Processed from human tissue, sterile, ready to use.',
+        brand: 'Dermacell'
+    },
+    {
+        id: 3,
+        slug: 'oxygen-therapy-velox',
+        title: 'Oxygen Therapy with Temperature (Velox)',
+        category: 'Respiratory Care',
+        shortDesc: 'Innovative oxygen therapy system with integrated temperature control.',
+        image: 'https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80&w=2070',
+        features: ['Temperature modulation', 'Continuous flow', 'Compact design'],
+        applications: ['COPD management', 'Post-acute respiratory support', 'Wound oxygenation'],
+        specifications: 'Integrated heater-cooler, touch-screen interface.',
+        brand: 'Velox'
+    },
+    {
+        id: 4,
+        slug: 'negative-pressure-wound-therapy',
+        title: 'Negative Pressure Wound Therapy (NPWT)',
+        category: 'Wound Management',
+        shortDesc: 'Advanced vacuum-assisted closure system for accelerated healing.',
+        image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070',
+        features: ['Intermittent/Continuous pressure', 'Low noise pump', 'Disposable canisters'],
+        applications: ['Chronic wounds', 'Surgical incisions', 'Grafts and flaps'],
+        specifications: 'Negative pressure range: -50 to -200 mmHg.',
+        brand: 'Essar Engineers'
+    },
+    {
+        id: 5,
+        slug: 'silicone-sheet-gel',
+        title: 'Silicone Sheet & Gel',
+        category: 'Scar Management',
+        shortDesc: 'Medical grade silicone solutions for hypertrophic and keloid scar management.',
+        image: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&q=80&w=2070',
+        features: ['Self-adhesive sheets', 'Transparent gel', 'Easy to apply'],
+        applications: ['Old & New scars', 'Keloids', 'Hypertrophic scars'],
+        specifications: 'Medical grade silicone, biocompatible.',
+        brand: 'Essar Engineers'
+    },
+    {
+        id: 6,
+        slug: 'artificial-limbs',
+        title: 'Artificial Limbs & Prosthesis',
+        category: 'Orthotics & Prosthetics',
+        shortDesc: 'Customized prosthetic solutions for upper and lower limb support.',
+        image: 'https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=2070',
+        features: ['Modular components', 'Lightweight materials', 'Natural appearance'],
+        applications: ['Amputation support', 'Mobility enhancement'],
+        specifications: 'Carbon fiber and high-grade polymers.',
+        brand: 'Essar Engineers'
+    },
+    {
+        id: 7,
+        slug: 'magnetic-ear-keloid-clip',
+        title: 'Magnetic Ear Keloid Clip',
+        category: 'Dermatology',
+        shortDesc: 'Non-surgical pressure treatment for ear keloids following excision.',
+        image: 'https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&fit=crop&q=80&w=2070',
+        features: ['Strong neodymium magnets', 'Adjustable pressure', 'Invisible wear'],
+        applications: ['Ear lobe keloids', 'Post-surgical keloid prevention'],
+        specifications: 'Gold plated or medical grade steel finish.',
+        brand: 'Essar Engineers'
+    },
+    {
+        id: 8,
+        slug: 'diabetic-footwear',
+        title: 'Diabetic Footwear',
+        category: 'Foot Care',
+        shortDesc: 'Specially designed shoes and insoles for diabetic foot protection.',
+        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=2070',
+        features: ['Extra depth', 'Seamless interior', 'Pressure redistribution insoles'],
+        applications: ['Diabetic neuropathy', 'Foot ulcer prevention'],
+        specifications: 'Soft leather upper, multi-density insoles.',
+        brand: 'Essar Engineers'
+    },
+    {
+        id: 9,
+        slug: 'advanced-wound-dressings',
+        title: 'Advanced Wound Dressings',
+        category: 'Wound Care',
+        shortDesc: 'A range of specialized dressings including alginates, foams, and hydrogels.',
+        image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=2070',
+        features: ['High absorbency', 'Moist wound environment', 'Non-adherent'],
+        applications: ['Exudative wounds', 'Burn management', 'Minor traumatic wounds'],
+        specifications: 'Sterile packaging, various sizes available.',
+        brand: 'Essar Engineers'
+    }
+];

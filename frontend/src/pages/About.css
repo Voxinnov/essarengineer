@@ -1,0 +1,219 @@
+.modern-about {
+    background-color: var(--background);
+}
+
+.about-hero {
+    padding: 15rem 0 8rem;
+}
+
+.modern-title-l {
+    font-size: 6rem;
+    line-height: 0.9;
+    font-weight: 900;
+}
+
+.about-narrative {
+    padding: 10rem 0;
+}
+
+.narrative-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.visual-block-glass {
+    width: 100%;
+    height: 700px;
+    border-radius: 4rem;
+    overflow: hidden;
+    position: relative;
+    border: 15px solid white;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.08);
+}
+
+.visual-block-glass img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block-overlay {
+    position: absolute;
+    bottom: 2rem;
+    right: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    background: white !important;
+    color: var(--primary) !important;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.narrative-text h2 {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+}
+
+.narrative-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    background: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.point .icon {
+    color: var(--primary);
+}
+
+/* Stats */
+.about-stats {
+    padding: 10rem 0;
+}
+
+.grid-cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.stat-card-modern {
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.stat-icon-aura {
+    color: var(--primary);
+}
+
+.stat-val {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.stat-label-modern {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Excellence */
+.about-excellence {
+    padding: 10rem 0;
+}
+
+.excellence-glass {
+    padding: 8rem 4rem;
+    border-radius: 4rem;
+}
+
+.cert-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.cert-box {
+    padding: 1.5rem 3rem;
+    border-radius: 1.5rem;
+    font-weight: 800;
+    color: var(--foreground);
+    background: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.about-divisions {
+    padding: 10rem 0;
+}
+
+.division-card {
+    transition: var(--transition);
+}
+
+.division-card:hover {
+    transform: translateY(-10px);
+}
+
+.division-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.division-card p {
+    font-size: 1.1rem;
+    color: rgba(15, 23, 42, 0.7);
+    line-height: 1.8;
+}
+
+.location-box h4 {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+    .modern-title-l {
+        font-size: 3.5rem;
+    }
+
+    .grid-cols-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .excellence-glass h2 {
+        font-size: 2.5rem;
+    }
+
+    .visual-block-glass {
+        height: 400px;
+        border-radius: 3rem;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modern-title-l {
+        font-size: 2.5rem;
+    }
+
+    .about-hero {
+        padding: 10rem 0 5rem;
+    }
+
+    .narrative-visual {
+        order: 2;
+    }
+
+    .narrative-text {
+        order: 1;
+    }
+
+    .division-card h3 {
+        font-size: 1.75rem;
+    }
+}
