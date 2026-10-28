@@ -4,6 +4,9 @@ import { ArrowRight, Shield, Layers, Zap, Info, ArrowUpRight, Target, Activity, 
 import { Link } from 'react-router-dom';
 import HeroCarousel from '../components/HeroCarousel';
 import { products } from '../data/products';
+import banner1 from '../assets/images/banner1.jpg';
+import banner2 from '../assets/images/banner2.jpg';
+import banner3 from '../assets/images/banner3.jpg';
 import './Home.css';
 import './About.css';
 import './Products.css';
@@ -55,21 +58,6 @@ const Home = () => {
                             className="hero-image-container-new"
                         >
                             <HeroCarousel />
-
-                            <div className="floating-badge top-left">
-                                <Shield size={18} />
-                                <span>CERTIFIED STANDARDS</span>
-                            </div>
-
-                            <div className="floating-badge bottom-right">
-                                <Users size={18} />
-                                <span>Trusted by 100+ Hospitals</span>
-                            </div>
-
-                            <div className="rating-badge">
-                                <Activity size={16} className="text-primary" />
-                                <span>Clinical Grade</span>
-                            </div>
                         </motion.div>
                     </div>
 
@@ -174,7 +162,7 @@ const Home = () => {
 
                     <div className="expertise-visual floating">
                         <div className="visual-orb glass">
-                            <img src="https://images.unsplash.com/photo-1576091160550-217359f42f8c?auto=format&fit=crop&q=80&w=2070" alt="Tech" />
+                            <img src={banner1} alt="Medical Engineering" />
                         </div>
                     </div>
                 </div>
@@ -248,7 +236,7 @@ const Home = () => {
                 <div className="container grid grid-cols-2 align-center">
                     <div className="narrative-visual floating">
                         <div className="visual-block-glass glass">
-                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=2080" alt="Tech Laboratory" />
+                            <img src={banner3} alt="Medical Wound Care" />
                             <div className="block-overlay glass">ISO CERTIFIED MANUFACTURING</div>
                         </div>
                     </div>

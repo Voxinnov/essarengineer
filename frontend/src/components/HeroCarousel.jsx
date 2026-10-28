@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import banner1 from '../assets/images/banner1.jpg';
 import banner2 from '../assets/images/banner2.jpg';
+import banner3 from '../assets/images/banner3.jpg';
 import './HeroCarousel.css';
 
 const images = [
     banner1,
     banner2,
-    "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?auto=format&fit=crop&q=80&w=2070"  // Keeping one high-quality engineering stock
+    banner3,
 ];
 
 const HeroCarousel = () => {

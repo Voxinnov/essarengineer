@@ -161,6 +161,85 @@ h6 {
   padding: 10rem 0;
 }
 
+/* Common Layout Utilities */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.subtitle-gradient {
+  color: var(--primary);
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.modern-title-l {
+  font-size: 6rem;
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+.center-p {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.p-xl {
+  font-size: 1.25rem;
+  color: rgba(15, 23, 42, 0.6);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+  .modern-title-l {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modern-title-l {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modern-title-l {
+    font-size: 2rem;
+  }
+}
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.btn-glow:hover::after {
+  opacity: 1;
+}
+
 /* Scroll Progress Bar */
 .scroll-progress {
   position: fixed;

@@ -4,12 +4,7 @@ import { Mail, Phone, MapPin, Send, MessageSquare, Clock, Globe, ArrowRight } fr
 import './Contact.css';
 
 const Contact = () => {
-    const info = [
-        { icon: <Phone />, label: 'SYSTEM SUPPORT', detail: '+91 99307 72265' },
-        { icon: <Mail />, label: 'COMM CHANNEL', detail: 'info@essarengineers.com' },
-        { icon: <MapPin />, label: 'HEADQUARTERS', detail: 'Nerul, Navi Mumbai' },
-        { icon: <Clock />, label: 'OPS PROTOCOL', detail: 'Mon - Sat: 09:00 - 18:00' },
-    ];
+
 
     return (
         <div className="modern-contact">
@@ -29,14 +24,41 @@ const Contact = () => {
             <section className="contact-main py-20">
                 <div className="container grid grid-cols-2 gap-8">
                     <div className="contact-info-hub">
-                        <div className="grid grid-cols-2 gap-4">
-                            {info.map((item, i) => (
-                                <div key={i} className="info-glass-card glass">
-                                    <div className="info-icon-box">{item.icon}</div>
-                                    <span className="info-label">{item.label}</span>
-                                    <span className="info-detail">{item.detail}</span>
+                        <motion.div 
+                            className="hq-card-featured glass"
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="hq-badge">PRIMARY HUB</div>
+                            <div className="hq-content">
+                                <MapPin className="hq-icon" size={40} />
+                                <div className="hq-text">
+                                    <span className="info-label">HEADQUARTERS</span>
+                                    <h3>Puthiyakavu, Thrippunithura</h3>
+                                    <p>MLA Rd, near GREEN VALLEY ORCHID, <br />Ernakulam, Kerala 682307</p>
                                 </div>
-                            ))}
+                            </div>
+                            <div className="hq-footer">
+                                <Clock size={16} /> <span>Operation Hours: 09:00 AM - 06:00 PM (Mon - Sat)</span>
+                            </div>
+                        </motion.div>
+
+                        <div className="contact-grid-modern">
+                            <div className="contact-pill-card glass">
+                                <div className="pill-icon"><Phone size={24} /></div>
+                                <div className="pill-text">
+                                    <span className="info-label">SYSTEM SUPPORT</span>
+                                    <span className="pill-val">+91 99307 72265</span>
+                                </div>
+                            </div>
+                            <div className="contact-pill-card glass">
+                                <div className="pill-icon"><Mail size={24} /></div>
+                                <div className="pill-text">
+                                    <span className="info-label">COMM CHANNEL</span>
+                                    <span className="pill-val">info@essarengineers.com</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="whatsapp-box-modern glass mt-4">
@@ -96,7 +118,7 @@ const Contact = () => {
                 <div className="container">
                     <div className="map-glass-box glass">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120713.43572836267!2d72.95159154335938!3d19.0309995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1664e9a3adb%3A0xc34850fa63469e35!2sNerul%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709292800000!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.177695172121!2d76.3585038!3d9.919154299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08739dc2638fa9%3A0x40ea7abba0d90167!2sESSAR%20ENGINEERS!5e0!3m2!1sen!2sin!4v1773642288178!5m2!1sen!2sin"
                             width="100%"
                             height="500"
                             style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) contrast(1.2) brightness(0.9)', borderRadius: '2rem' }}
@@ -104,7 +126,7 @@ const Contact = () => {
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                         />
-                        <div className="map-overlay-badge glass">PRECISION HUB • NAVI MUMBAI</div>
+                        <div className="map-overlay-badge glass">PRECISION HUB • ERNAKULAM</div>
                     </div>
                 </div>
             </section>

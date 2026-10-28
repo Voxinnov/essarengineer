@@ -123,54 +123,140 @@
     padding: 10rem 0;
 }
 
-.excellence-glass {
-    padding: 8rem 4rem;
-    border-radius: 4rem;
-}
-
-.cert-logos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 4rem;
-}
-
-.cert-box {
-    padding: 1.5rem 3rem;
-    border-radius: 1.5rem;
-    font-weight: 800;
-    color: var(--foreground);
-    background: white !important;
-    border: 1px solid rgba(0, 0, 0, 0.05) !important;
-}
-
 .about-divisions {
     padding: 10rem 0;
 }
 
 .division-card {
+    padding: 5rem 4rem;
+    border-radius: 4rem;
+    position: relative;
+    overflow: hidden;
     transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
 .division-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: var(--primary) !important;
+}
+
+.division-icon-box {
+    width: 80px;
+    height: 80px;
+    background: rgba(165, 22, 10, 0.1);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 2.5rem;
 }
 
 .division-card h3 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-weight: 800;
 }
 
 .division-card p {
-    font-size: 1.1rem;
-    color: rgba(15, 23, 42, 0.7);
-    line-height: 1.8;
+    font-size: 1.15rem;
+    color: rgba(15, 23, 42, 0.6);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    font-weight: 500;
 }
 
-.location-box h4 {
-    font-size: 1.25rem;
-    font-weight: 800;
+.division-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
+
+.division-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.division-item .icon {
+    color: var(--primary);
+}
+
+.excellence-glass {
+    padding: 10rem 6rem;
+    border-radius: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-grid-premium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 6rem;
+}
+
+.location-box-premium {
+    padding: 4rem;
+    border-radius: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    transition: var(--transition);
+}
+
+.location-box-premium:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: var(--primary) !important;
+}
+
+.loc-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(165, 22, 10, 0.1);
+    color: var(--primary);
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.location-box-premium h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.loc-detail-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.loc-detail-row .icon {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.loc-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(15, 23, 42, 0.7);
+    font-weight: 500;
+}
+
 
 @media (max-width: 1024px) {
     .modern-title-l {
@@ -202,7 +288,11 @@
     }
 
     .about-hero {
-        padding: 10rem 0 5rem;
+        padding: 8rem 0 4rem;
+    }
+
+    .about-narrative {
+        padding: 4rem 0;
     }
 
     .narrative-visual {
@@ -213,7 +303,67 @@
         order: 1;
     }
 
+    .narrative-text h2 {
+        font-size: 2.5rem;
+    }
+
     .division-card h3 {
         font-size: 1.75rem;
+    }
+
+    .visual-block-glass {
+        height: 300px;
+    }
+
+    .excellence-glass {
+        padding: 4rem 2rem;
+        border-radius: 2.5rem;
+    }
+
+    .cert-logos {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-title-l {
+        font-size: 2rem;
+    }
+
+    .about-hero {
+        padding: 6rem 0 3rem;
+    }
+
+    .narrative-text h2 {
+        font-size: 2rem;
+    }
+
+    .visual-block-glass {
+        height: 240px;
+        border-radius: 2rem;
+        border-width: 8px;
+    }
+
+    .grid-cols-4 {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-card-modern {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .stat-val {
+        font-size: 2.5rem;
+    }
+
+    .excellence-glass {
+        padding: 3rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .cert-box {
+        padding: 1rem 1.5rem;
     }
 }

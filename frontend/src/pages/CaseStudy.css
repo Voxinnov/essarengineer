@@ -1,0 +1,204 @@
+.case-study-page {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+.case-study-hero {
+    padding: 12rem 0 6rem;
+}
+
+.tab-controls-modern {
+    padding: 6px;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+}
+
+.tab-switcher-modern {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tab-btn-modern {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    border: none;
+    background: transparent;
+    color: var(--foreground);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0.6;
+}
+
+.tab-btn-modern:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.tab-btn-modern.active {
+    opacity: 1;
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 10px 20px rgba(165, 22, 10, 0.15);
+}
+
+.content-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 3rem;
+}
+
+.case-card-modern {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-visual {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.case-card-modern:hover .card-visual img {
+    transform: scale(1.05);
+}
+
+.card-badge-box {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.badge-modern {
+    padding: 0.6rem 1.2rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.red-badge {
+    background: var(--primary);
+    color: white;
+}
+
+.dark-badge {
+    background: rgba(15, 23, 42, 0.9);
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.video-overlay-modern {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.case-card-modern:hover .video-overlay-modern {
+    opacity: 1;
+}
+
+.play-icon-box {
+    width: 70px;
+    height: 70px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+    box-shadow: 0 15px 30px rgba(165, 22, 10, 0.3);
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.case-card-modern:hover .play-icon-box {
+    transform: scale(1);
+}
+
+.card-body {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.body-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(15, 23, 42, 0.5);
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.body-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    color: var(--foreground);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.body-excerpt {
+    font-size: 1.05rem;
+    color: rgba(15, 23, 42, 0.6);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .content-grid-modern {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-grid-modern {
+        grid-template-columns: 1fr;
+    }
+    .case-study-hero {
+        padding: 8rem 0 4rem;
+    }
+    .tab-btn-modern span {
+        display: none;
+    }
+    .tab-btn-modern {
+        padding: 1rem;
+    }
+    .body-title {
+        font-size: 1.4rem;
+    }
+}
+
+

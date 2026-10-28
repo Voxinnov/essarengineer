@@ -1,0 +1,152 @@
+.modern-testimonials {
+    background-color: var(--background);
+}
+
+.testimonials-hero {
+    padding: 15rem 0 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-title-m {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.p-subtitle {
+    font-size: 1.2rem;
+    color: rgba(15, 23, 42, 0.5);
+    font-weight: 600;
+}
+
+.icon-aura-header {
+    width: 80px;
+    height: 80px;
+    background: rgba(165, 22, 10, 0.1);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin: 0 auto 2.5rem;
+}
+
+.icon-aura-header.blue {
+    background: rgba(14, 165, 233, 0.1);
+    color: #0ea5e9;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.testimonial-card {
+    padding: 4rem;
+    border-radius: 3.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: var(--transition);
+}
+
+.card-quote-icon {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    color: rgba(165, 22, 10, 0.05);
+}
+
+.card-quote-icon.blue {
+    color: rgba(14, 165, 233, 0.05);
+}
+
+.quote-svg {
+    opacity: 1;
+}
+
+.rating-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    font-weight: 600;
+    color: var(--foreground);
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.testi-author {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.author-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.25rem;
+}
+
+.author-designation {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.author-org {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: 3rem 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modern-title-l {
+        font-size: 3rem;
+    }
+    
+    .modern-title-m {
+        font-size: 2.5rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+}

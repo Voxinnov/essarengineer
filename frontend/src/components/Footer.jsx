@@ -36,6 +36,7 @@ const Footer = () => {
                         <ul>
                             <li><Link to="/about">Our Expertise</Link></li>
                             <li><Link to="/about">About Us</Link></li>
+                            <li><Link to="/case-study">Case Study</Link></li>
                             <li><Link to="/contact">Contact Hub</Link></li>
                             <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
@@ -44,7 +45,7 @@ const Footer = () => {
                         <h4>LOCATIONS</h4>
                         <p className="p-sm">Ernakulam, Kerala (Medical)</p>
                         <p className="p-sm">Shakurpur, New Delhi (Traffic)</p>
-                        <a href="mailto:info@essarengineers.co.in" className="email-link">info@essarengineers.co.in</a>
+                        <a href="mailto:info@essarengineers.com" className="email-link">Email to: info@essarengineers.com</a>
                     </div>
                 </div>
             </div>

@@ -75,35 +75,61 @@ const About = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-12">
                         <motion.div
-                            className="division-card glass-card p-12"
+                            className="division-card glass"
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <span className="badge-glow mb-4">MEDICAL DIVISION</span>
-                            <h3>Compression & Recovery</h3>
-                            <p className="mt-4 text-gray-600">Leading manufacturer of high-quality Custom and Ready-made pressure garments. We specialize in post-operative recovery solutions including Liposuction garments, Silicon nostril retainers, and abdominal binders.</p>
-                            <ul className="mt-6 space-y-3">
-                                <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Breathable, High-grade Fabrics</li>
-                                <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Uniform Pressure Distribution</li>
-                                <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Custom-fit Specialists</li>
-                            </ul>
+                            <div className="division-icon-box">
+                                <Activity size={40} />
+                            </div>
+                            <span className="subtitle-gradient">MEDICAL DIVISION</span>
+                            <h3>Compression <br />& Recovery</h3>
+                            <p>Leading manufacturer of high-quality Custom and Ready-made pressure garments for clinical rehabilitation and post-operative care.</p>
+                            
+                            <div className="division-list">
+                                <div className="division-item">
+                                    <CheckCircle size={20} className="icon" />
+                                    <span>Breathable, High-grade Fabrics</span>
+                                </div>
+                                <div className="division-item">
+                                    <CheckCircle size={20} className="icon" />
+                                    <span>Uniform Pressure Distribution</span>
+                                </div>
+                                <div className="division-item">
+                                    <CheckCircle size={20} className="icon" />
+                                    <span>Custom-fit Precision Engineering</span>
+                                </div>
+                            </div>
                         </motion.div>
 
                         <motion.div
-                            className="division-card glass-card p-12"
+                            className="division-card glass"
                             initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                         >
-                            <span className="badge-glow mb-4">TRAFFIC DIVISION</span>
-                            <h3>Infrastructure Safety</h3>
-                            <p className="mt-4 text-gray-600">Specialized manufacturing and installation of comprehensive traffic signaling systems. From LED signals to complete controller boxes, we provide end-to-end traffic management solutions.</p>
-                            <ul className="mt-6 space-y-3">
-                                <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> LED Signal Technology</li>
-                                <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Infrastructure Design & Install</li>
-                                <li className="flex items-center gap-2"><CheckCircle size={16} className="text-primary" /> Municipal Standard Compliance</li>
-                            </ul>
+                            <div className="division-icon-box">
+                                <Shield size={40} />
+                            </div>
+                            <span className="subtitle-gradient">TRAFFIC DIVISION</span>
+                            <h3>Infrastructure <br />& Safety</h3>
+                            <p>Specialized manufacturing and installation of comprehensive traffic signaling systems and intelligent urban transit solutions.</p>
+
+                            <div className="division-list">
+                                <div className="division-item">
+                                    <CheckCircle size={20} className="icon" />
+                                    <span>Advanced LED Signal Technology</span>
+                                </div>
+                                <div className="division-item">
+                                    <CheckCircle size={20} className="icon" />
+                                    <span>Industrial Grade Controller Hubs</span>
+                                </div>
+                                <div className="division-item">
+                                    <CheckCircle size={20} className="icon" />
+                                    <span>Municipal Standard Compliance</span>
+                                </div>
+                            </div>
                         </motion.div>
                     </div>
                 </div>
@@ -135,15 +161,55 @@ const About = () => {
                     <div className="excellence-glass glass text-center">
                         <span className="subtitle-gradient">OUR LOCATIONS</span>
                         <h2>Connect with our Offices</h2>
-                        <div className="grid grid-cols-2 gap-8 mt-12 text-left">
-                            <div className="location-box glass p-8">
-                                <h4 className="flex items-center gap-2 mb-4"><MapPin size={20} className="text-primary" /> Kerala Branch (Medical)</h4>
-                                <p className="text-sm opacity-80">Padmakumaran Building, Ground Floor,<br />Market Road, Thekkumbhagom,<br />Thripunithura, Ernakulam, Kerala - 682301</p>
-                            </div>
-                            <div className="location-box glass p-8">
-                                <h4 className="flex items-center gap-2 mb-4"><MapPin size={20} className="text-primary" /> Delhi Office (Traffic)</h4>
-                                <p className="text-sm opacity-80">Address: C-148, <br />Shakurpur Industrial Area, <br />New Delhi - 110034</p>
-                            </div>
+                        <div className="location-grid-premium">
+                            <motion.div 
+                                className="location-box-premium glass"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                            >
+                                <span className="loc-tag">MEDICAL & HEADQUARTERS</span>
+                                <h4>Kerala Branch <br />(HQ)</h4>
+                                <div className="location-details">
+                                    <div className="loc-detail-row">
+                                        <MapPin className="icon" size={24} />
+                                        <span className="loc-text">MLA Rd, near GREEN VALLEY ORCHID,<br />Puthiyakavu, Thrippunithura,<br />Ernakulam, Kerala 682307</span>
+                                    </div>
+                                    <div className="loc-detail-row">
+                                        <Phone className="icon" size={24} />
+                                        <span className="loc-text">+91 91882 12211</span>
+                                    </div>
+                                    <div className="loc-detail-row">
+                                        <Mail className="icon" size={24} />
+                                        <span className="loc-text">info@essarengineers.com</span>
+                                    </div>
+                                </div>
+                            </motion.div>
+
+                            <motion.div 
+                                className="location-box-premium glass"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2 }}
+                                viewport={{ once: true }}
+                            >
+                                <span className="loc-tag">TRAFFIC DIVISION</span>
+                                <h4>Delhi Office <br />(Traffic)</h4>
+                                <div className="location-details">
+                                    <div className="loc-detail-row">
+                                        <MapPin className="icon" size={24} />
+                                        <span className="loc-text">C-148, Shakurpur Industrial Area,<br />New Delhi - 110034</span>
+                                    </div>
+                                    <div className="loc-detail-row">
+                                        <Phone className="icon" size={24} />
+                                        <span className="loc-text">+91 99307 72265</span>
+                                    </div>
+                                    <div className="loc-detail-row">
+                                        <Mail className="icon" size={24} />
+                                        <span className="loc-text">traffic@essarengineers.com</span>
+                                    </div>
+                                </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
